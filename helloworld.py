@@ -3,7 +3,7 @@ x = ["a", 'b', 'c']
 for i in x:
     print(i)
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango", "pawpaw"]
+fruits = ["apple", "banana", "cherry", "kiwi", "mango", "pawpa"]
 newlist = []
 
 for x in fruits:
