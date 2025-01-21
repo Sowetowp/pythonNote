@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color and Even Number</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="generateRandomColor()">Generate Random Color</button>
+    <button onclick="generateRandomEvenNumber()">Generate Random Even Number</button>
+
+    <div id="output"></div>
+
+    <script>
+        function generateRandomColor() {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.getElementById('output').innerText = `Random Color: ${randomColor}`;
+        }
+
+        function generateRandomEvenNumber() {
+            const randomEvenNumber = 2 * Math.floor(Math.random()*50); // Generates random even number between 0 and 100
+            document.getElementById('output').innerText = `Random Even Number: ${randomEvenNumber}`;
+        }
+    </script>
+
+</body>
+</html>
