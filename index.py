@@ -47,3 +47,4 @@ print(j)
 pp = [100, 20, 75, 50]
 pp.sort(key=lambda n: n - 50)
 print(pp)
+print
